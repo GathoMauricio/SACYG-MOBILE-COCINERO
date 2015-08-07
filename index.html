@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html><!-- INICIO HTML  -->
+
+<head> <!--  INICIO HEAD HTML -->
+    <title>Hello PhoneGap</title>
+        <!-- METADATOS  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <meta charset="utf-8"/>
+        <!--  FIN METADATOS -->
+
+        <!--  ESTILOS CSS-->
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.custom.structure.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/alert.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" >
+        <!--  FIN ESTILOS CSS -->
+
+        <!-- SCRIPTS JS  -->
+
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile.custom.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/alert.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/codigo.js"></script>
+        <!--  FIN SCRIPTS JS -->
+
+        <!--Jquery UI-->
+
+        <!--fin Jquery UI-->
+        <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css">
+        <script type="text/javascript" charset="utf-8" src="jquery/jquery-ui.min.js"></script>
+        <!-- INICIO JS PHONEGAP  -->
+        <script src="js/pusher.js"></script>
+        <script type="text/javascript">
+          $(function(){
+          var pusher = new Pusher('6e90756aed549b33e941');
+          var canal = pusher.subscribe('canal_gatho');
+          canal.bind('insert_pedido',function(data){
+          $("audio").trigger("play");
+          swal("Notificación!!!",data.mensaje);
+          loadDomicilio(); 
+           });
+          });
+        function onBodyLoad()
+        {       
+           if(window.localStorage.getItem('id_empleado')!= null)
+           {
+               loadDomicilio(); 
+
+           }else
+           {
+               loadInicio();
+           }
+
+
+        }
+
+        function onDeviceReady()
+        {
+            
+        }
+
+        </script><!-- FIN JS PHONEGAP  -->
+
+</head> <!--  FIN HEAD HTML --> 
+
+<body onload="onBodyLoad();"> <!--  INICIO BODY -->
+<audio src="sonidos/notificacion.ogg"></audio> 
+
+<div data-role="page"> <!--  INICIO PAGE -->
+
+   <div data-role="header" class="header" data-position="fixed" id="menu"> <!--  INICIO HEAD -->
+      <h1 class="titulo">S A C Y G Chef mobile</h1>
+      <a href="#panel" id="abre_panel" class="panel-btn"></a> 
+   </div>  <!--  FIN HEAD -->
+
+  <div data-role="panel" id="panel" data-position-fixed="true" data-position="left" data-display="overlay"> <!--  INICIO PANEL -->
+      
+      <ul data-role="listview"> 
+
+        <li data-icon="false" class="item">
+             <a href="#" class="panel_li "   style="color:white" onclick="loadDomicilio();" >
+              <span class="icon-user"></span>
+               Pedidos a domicilio
+             </a>
+        </li>
+
+        <li data-icon="false" class="item">
+            <a href="#" class="panel_li " style="color:white" onclick="loadOrden();" >
+            <span class="icon-info"></span>
+            Ordenes en sitio
+            </a>
+        </li>
+
+        <li data-icon="false" class="item">
+            <a href="#" class="panel_li " style="color:white" onclick="cerrarSesion();" >
+            <span class="icon-info"></span>
+            Cerrar sesión
+            </a>
+        </li>
+
+        <li data-icon="false" class="item">
+              <a href="#" class="panel_li " style="color:white">
+              <center>
+              <span class="icon-embed2"></span>
+              </center>
+              </a>
+        </li>
+
+        <li data-icon="false" class="item">
+             <div id="redes" > <!--  INICIO REDES -->
+                
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </div> <!-- FIN REDES  -->
+         </li>
+
+    </ul> 
+
+  </div> <!--  FIN PANEL -->
+
+  <div data-role="content" id="contenedor"> <!--  INICIO BODY -->
+  
+  
+
+  </div> <!--  FIN BODY -->
+
+
+</div><!--  FIN PAGE -->
+
+</body> <!-- FIN BODY  -->
+</html> <!--  FIN HTML -->
+

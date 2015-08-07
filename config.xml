@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.katze.sacyg_cocinero"
+    version   = "1.0.0">
+
+<name>SACYG Mobile</name>
+
+<description>
+Aplicacion para cocineros de SACYG
+</description>
+
+<author href="http://sacygrestaurantes.com" email="mauricio@gmail.com">
+Katze Systems
+</author>
+<!--Acceso a URLs externas-->
+<access origin="*" />
+<gap:plugin name="org.apache.cordova.geolocation" version="0.3.6" />
+<icon src="img/icono.png" />
+</widget>

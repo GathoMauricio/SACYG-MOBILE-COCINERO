@@ -1,0 +1,136 @@
+/* CSS Document */
+body{
+/*background:url(../img/fondo.png) no-repeat center center fixed;*/
+background:url(../img/rest12.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.titulo{
+	color:#FFF;
+	font-family: "Lobster", "Times", serif;
+	font-size: 2.5em;
+	text-shadow: #aaa 2px 2px 2px;
+}
+.input{
+	width:80%;
+	height:30px;
+	text-align:center;
+	background-color:transparent;
+	border-radius:10px;
+	color:#FFF;
+	
+}
+button{
+	border: solid white 1px;
+	font-family: "Lobster", "Times", serif;
+	font-size: 1em;
+}
+.welcome{
+	color:#FFF;
+	font-family: "Lobster", "Times", serif;
+	font-size: 1.8em;
+	text-shadow: #aaa 2px 2px 2px;
+}
+.opciones{
+	color:#E6E6E6;
+	font-size: 1.2em;
+	text-decoration:inherit
+}
+#abre_panel{ 
+  position: absolute; 
+  background-image: url(../img/menu_btn.png); 
+  background-repeat: no-repeat; 
+  width: 50px; 
+  height: 20px; 
+  box-shadow: none; 
+  background-color: transparent !important; 
+  border: none; 
+  top: 0; 
+  margin-top: 6px !important; 
+} 
+#menu
+{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+99,000000+100,000000+100&amp;0.65+91,0.65+91,0+92,0+92,0.65+92 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 91%, rgba(0,0,0,0.65) 92%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(91%,rgba(0,0,0,0.65)), color-stop(92%,rgba(0,0,0,0.65)), color-stop(99%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+#panel
+{
+padding-top:45px;
+background-color: transparent;
+}
+.item{
+	
+	border: solid transparent 1px;
+	font-family: "Lobster", "Times", serif;
+	font-size: 1em;
+	color:#FFF;
+	border-radius:5px; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+99,000000+100,000000+100&amp;0.65+91,0.65+91,0+92,0+92,0.65+92 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 91%, rgba(0,0,0,0.65) 92%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(91%,rgba(0,0,0,0.65)), color-stop(92%,rgba(0,0,0,0.65)), color-stop(99%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+.lbl_menu
+{
+	color: white;
+	font-family: "Lobster", "Times", serif;
+}
+a
+{
+	text-decoration: none;
+}
+iframe
+{
+	width: 100%;
+	height: 200px;
+}
+.contiene_menu
+{
+	width: 80%;
+	padding: 30px;
+	background:transparent;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+99,000000+100,000000+100&amp;0.65+91,0.65+91,0+92,0+92,0.65+92 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 91%, rgba(0,0,0,0.65) 92%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(91%,rgba(0,0,0,0.65)), color-stop(92%,rgba(0,0,0,0.65)), color-stop(99%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 91%,rgba(0,0,0,0.65) 92%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.menu_reservacion
+{
+	width: 50%;
+	float: left;
+	padding-bottom: 20px;
+	color:white;
+	font-family: "Lobster", "Times", serif;
+}
+.caja_reservacion
+{
+	width: 89%;
+	color: white;
+	border: solid 1px white;
+	padding: 10px;
+}
+#contenedor_pedido
+{
+	width: 97%;
+	color: white;
+
+}
